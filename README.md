@@ -11,9 +11,9 @@ El plugin proporciona configuraciones para integrar sensores de movimiento y dis
 Permite configurar sensores de movimiento principales o secundarios los cuales detectan movimiento para que al desactivarse, los actuadores se apaguen. 
 ### Actuadores: Configura dispositivos que se activan o desactivan cuando se cumplen ciertas condiciones. 
 ### Termostato: Permite ajustar los SetPoints del termostato para controlar la temperatura del ambiente. 
-### Modo Automático: Configura si ciertos dispositivos deben activarse automáticamente con base en el estado de los sensores. ### Configuración El plugin requiere una configuración inicial con varios parámetros que se describen a continuación:
+### Modo Automático: Configura si ciertos dispositivos deben activarse automáticamente con base en el estado de los sensores. 
 
-## Configuración del Plugin:
+## Configuración El plugin requiere una configuración inicial con varios parámetros que se describen a continuación.
 - itemId Sensor de Movimiento Principal (opcional): El itemId del sensor de movimiento principal. 
 - itemId Sensor de Movimiento Secundario (opcional): El itemId del sensor de movimiento secundario. 
 - itemId Actuadores On (opcional): El itemId de los dispositivos que se activarán cuando se detecte movimiento. 
