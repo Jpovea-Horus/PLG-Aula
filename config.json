@@ -1,0 +1,56 @@
+{
+    "id": "aul.aula_inteligente",
+    "version": "1.0.2.3",
+    "meta": {
+        "name": {
+            "text": "Aula-Intel Prod -::- 2024/12/31"
+        },
+        "description": {
+            "text": "Plugin (para max 20 Aulas) para determinar si un aula se encuentra ocupada o libre, tomando la decision de activar los dispositivos asociados"
+        },
+        "author": {
+            "text": "Horus team"
+        },
+        "type": "node",
+        "language": "lua",
+        "placement": {
+            "static": true,
+            "custom": true
+        },
+        "subname":{
+            "text": "Data"
+        }
+        
+    },
+    "type": "gateway",
+    "dependencies": {
+        "firmware": "2.0",
+        "addons": [
+            {
+                "id": "lua",
+                "version": "1.0"
+            }
+        ]
+    },
+    "permissions": [
+        "core",
+        "http",
+        "json",
+        "zwave",
+        "timer",
+        "logging",
+        "storage",
+        "network"
+    ],
+    "executionPolicy": "restoreLastScriptState",
+    "startup": "scripts/startup",
+    "teardown": "scripts/teardown",
+    "gateway": {
+        "name": "Aula inteligente",
+        "label": "Aula inteligente",
+        "forceRemoveDeviceCommand": "HUB:aul.aula_inteligente/scripts/delete_device",
+        "setItemValueCommand": "HUB:aul.aula_inteligente/scripts/set_item_value",
+        "setSettingValueCommand":"HUB:aul.aula_inteligente/scripts/set_setting_value",
+        "setItemValueResponsePolicy": "auto"
+    }
+}

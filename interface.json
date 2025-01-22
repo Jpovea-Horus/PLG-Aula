@@ -1,0 +1,93 @@
+{
+    "configuration": {
+        "type": "static",
+        "script": "HUB:aul.aula_inteligente/configs/account",
+        "placement": "device,plugin",
+        "inputs": [
+            {
+                "name": "itemId Sensor de movimiento principal",
+                "description": "Registra itemId del Sensor de movimiento principal",
+                "required": false,
+                "field": "sensor_movbatt",
+                "type": "string"
+            },
+            {
+                "name": "itemId Sensor de movimiento secundario",
+                "description": "Registra itemId del Sensor de movimiento secundario (opcional para sensor virtual)",
+                "required": false,
+                "field": "sensor_movelec",
+                "type": "string"
+            },
+            {
+                "name": "itemId Actuadores On",
+                "description": "Registra itemId dispositivos a on",
+                "required": false,
+                "field": "actuadores_on",
+                "type": "string"
+            },
+            {
+                "name": "itemId Actuadores Off",
+                "description": "Registra itemId dispositivos a off",
+                "required": false,
+                "field": "actuadores_off",
+                "type": "string"
+            },
+            {
+                "name": "itemId Actuadores Master Swiche",
+                "description": "Registra itemId dispositivo Master Swiche",
+                "required": false,
+                "field": "masterSwitch_on",
+                "type": "string"
+            },
+            {
+                "name": "deviceId thermostato",
+                "description": "Registra el deviceId del termostato para control de temperatura",
+                "required": false,
+                "field": "Aire",
+                "type": "string"
+            },
+            {
+                "name": "SetPoint On thermostato",
+                "description": "Registra SetPoint ON del thermostato",
+                "required": false,
+                "field": "SetpointOn",
+                "type": "int"
+            },
+            {
+                "name": "Modo Encendido Termostato",
+                "description": "Registra (si/no) desea activacion de termostato",
+                "required": false,
+                "field": "motionActivator",
+                "type": "string"
+            },
+            {
+                "name": "Modo Disparador Luces",
+                "description": "Registra (si/no) desea activacion de Luces por disparo de Movimiento o Actuadores",
+                "required": false,
+                "field": "ModoDispLuces",
+                "type": "string"
+            },
+            {
+                "name": "Modo Disparador Master Switch",
+                "description": "Registra (si/no) desea el uso de Master Swiche por disparo de Movimiento o Actuadores",
+                "required": false,
+                "field": "ModoMasterSwitch",
+                "type": "string"
+            },
+            {
+                "name": "Tiempo Sensor de Scaner",
+                "description": "Registra tiempo estimado de escaner despues de la desactivación del Sensor de Movimiento",
+                "required": true,
+                "field": "TiempoScan",
+                "type": "int"  
+            },
+            {
+                "name": "Password",
+                "description": "ingrese el Password del plugin",
+                "required": true,
+                "field": "password",
+                "type": "string"
+            }
+        ]
+    }
+}
