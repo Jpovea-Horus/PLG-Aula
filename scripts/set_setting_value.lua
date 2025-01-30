@@ -36,6 +36,18 @@ local _M5 = createModule(5)
 local _M6 = createModule(6)
 local _M7 = createModule(7)
 local _M8 = createModule(8)
+local _M9 = createModule(9)
+local _M10 = createModule(10)
+local _M11 = createModule(11)
+local _M12 = createModule(12)
+local _M13 = createModule(13)
+local _M14 = createModule(14)
+local _M15 = createModule(15)
+local _M16 = createModule(16)
+local _M17 = createModule(17)
+local _M18 = createModule(18)
+local _M19 = createModule(19)
+local _M20 = createModule(20)
 
 -- Función para buscar el setting_id en los módulos
 local function find_setting_module(setting_id)
@@ -58,6 +70,7 @@ local function find_setting_module(setting_id)
 
     -- Buscar en ambos módulos
     local found, key
+
     found, key = compare_and_find(_M1, setting_id)
     if found then
         return "_M1", key
@@ -96,6 +109,66 @@ local function find_setting_module(setting_id)
     found, key = compare_and_find(_M8, setting_id)
     if found then
         return "_M8", key
+    end
+
+    found, key = compare_and_find(_M9, setting_id)
+    if found then
+        return "_M9", key
+    end
+
+    found, key = compare_and_find(_M10, setting_id)
+    if found then
+        return "_M10", key
+    end
+
+    found, key = compare_and_find(_M11, setting_id)
+    if found then
+        return "_M11", key
+    end
+
+    found, key = compare_and_find(_M12, setting_id)
+    if found then
+        return "_M12", key
+    end
+
+    found, key = compare_and_find(_M13, setting_id)
+    if found then
+        return "_M13", key
+    end
+
+    found, key = compare_and_find(_M14, setting_id)
+    if found then
+        return "_M14", key
+    end
+
+    found, key = compare_and_find(_M15, setting_id)
+    if found then
+        return "_M15", key
+    end
+
+    found, key = compare_and_find(_M16, setting_id)
+    if found then
+        return "_M16", key
+    end
+
+    found, key = compare_and_find(_M17, setting_id)
+    if found then
+        return "_M17", key
+    end
+
+    found, key = compare_and_find(_M18, setting_id)
+    if found then
+        return "_M18", key
+    end
+
+    found, key = compare_and_find(_M19, setting_id)
+    if found then
+        return "_M19", key
+    end
+
+    found, key = compare_and_find(_M20, setting_id)
+    if found then
+        return "_M20", key
     end
 
     return nil, "Setting ID not found in any module"
